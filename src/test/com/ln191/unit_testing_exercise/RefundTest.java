@@ -55,5 +55,12 @@ public class RefundTest {
         assertEquals(0, refund.Reimburse(visitType,deductible));
 
     }
+    @Test
+    public void reimburseStringInvalidFalse() {
+        deductible = false;
+        visitType = "A";
+        assertEquals(0, refund.Reimburse(visitType,deductible));
+
+    }
 
 }
