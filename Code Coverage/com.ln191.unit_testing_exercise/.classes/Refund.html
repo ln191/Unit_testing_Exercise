@@ -1,0 +1,106 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: Refund</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">com.ln191.unit_testing_exercise</a> ]
+</div>
+
+<h1>Coverage Summary for Class: Refund (com.ln191.unit_testing_exercise)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">Refund</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/ 1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (3/ 3)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (7/ 7)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;package com.ln191.unit_testing_exercise;
+<i>2</i>&nbsp;
+<i>3</i>&nbsp;/**
+<i>4</i>&nbsp; * Created by x on 25-02-2017.
+<i>5</i>&nbsp; */
+<b class="fc"><i>6</i>&nbsp;public class Refund {</b>
+<i>7</i>&nbsp;
+<i>8</i>&nbsp;    public int Reimburse(String visitType, boolean deductible) {
+<i>9</i>&nbsp;
+<b class="fc"><i>10</i>&nbsp;        return deductible ? Percentage(visitType) : 0;</b>
+<i>11</i>&nbsp;    }
+<i>12</i>&nbsp;
+<i>13</i>&nbsp;    private int Percentage(String type) {
+<b class="fc"><i>14</i>&nbsp;        if (type == &quot;D&quot;)</b>
+<b class="fc"><i>15</i>&nbsp;            return 50;</b>
+<b class="fc"><i>16</i>&nbsp;        else if (type == &quot;H&quot;)</b>
+<b class="fc"><i>17</i>&nbsp;            return 80;</b>
+<i>18</i>&nbsp;        else
+<b class="fc"><i>19</i>&nbsp;            return 0;</b>
+<i>20</i>&nbsp;    }
+<i>21</i>&nbsp;
+<i>22</i>&nbsp;
+<i>23</i>&nbsp;}
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2017-02-25 19:24</div>
+</div>
+</body>
+</html>
