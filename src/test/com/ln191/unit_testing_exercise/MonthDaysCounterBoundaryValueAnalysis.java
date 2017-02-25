@@ -54,9 +54,9 @@ public class MonthDaysCounterBoundaryValueAnalysis {
 
     }
     @Test
-    public void getNumDaysinMonthRigthBoundYear(){
+    public void getNumDaysinMonthRigthBoundInvalid(){
         month = 13;
-        year = 2^31;
+        year = (int)Math.pow(2,31);;
         int result = counter.getNumDaysinMonth(month,year);
         int expResult = 0;
         assertEquals(expResult,result,0.0);
